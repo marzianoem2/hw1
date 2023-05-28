@@ -1,0 +1,47 @@
+nav {
+    background-color: #a88f68;
+}
+
+#form-search input[type=search] {
+    background-color: #ede1cd;
+}
+
+#form-search input[type=search]:focus {
+    border: 1px solid #ede0c8;
+}
+
+#form-search button {
+    background-color: #ede0c8;
+    color: #a88f68;
+    cursor: pointer;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.row p {
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.row .titolo {
+    font-weight: 700;
+    color: #796647;
+    font-size: 1.4em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .row .titolo {
+        font-size: 1.2em;
+    }
+}

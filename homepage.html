@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookLife - Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style_home.css">
+        <link rel="icon" href="logo.png" type="image/icon type">
+
+        <!-- font booklife -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
+        <!-- font per headings -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+        <!-- font body -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+        <!-- icone -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <script src="homepage.js" defer="true"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <p>BookLife</p>  
+                <div>
+                    <a href="homepage.html">HOME</a> 
+                    <a href="login.php" class="log-in-sign-up">Log in</a> 
+                    <a href="signup.php" class="log-in-sign-up">Sign up</a> 
+                </div>
+                
+                <div id="menu-mobile" class="material-icons">menu</div>   
+            </nav>
+
+            <div class="par-header">
+                <q>
+                    C’è qualcosa di delizioso nello scrivere le prime parole di una storia, non sai mai dove ti porteranno
+                </q>
+                <p>
+                    - Beatrix Potter
+                </p>
+            </div>
+
+            <div id="overlay"></div>
+        </header>
+
+        <div class="slideshow">
+            <div id="row1">
+                <img>
+                <p></p>
+            </div>
+            <div id="row2">
+                <button id="back" class="material-icons">
+                    arrow_back_ios
+                </button>
+                <button id="next" class="material-icons">
+                    arrow_forward_ios
+                </button>
+            </div>
+        </div>
+
+        <section>
+            <p>
+                Cerca una parola chiave per trovare recensioni su quell'argomento
+            </p>
+            <form name="search-art" id="search-art" method="post">
+                <input type="search" name="search" placeholder="Cerca una recensione...">
+                <button type="submit" class="material-icons">search</button>
+            </form>
+
+            <div id="results-1" class="hidden"></div>
+        </section>
+
+        <footer>
+            <div class="row-footer">
+                <div class="footer-col">
+                    <p>BookLife</p>
+                    <div>
+                        <a href="">Chi siamo</a>
+                        <a href="">Privacy policy</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <p>APP MOBILE</p>
+                    <div>
+                        <a href="">App Android</a>
+                        <a href="">App IOS</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <p>SOCIAL</p>
+                    <div class="social-links">
+                        <div>
+                            <img src="instagram.png">
+                            <a href="">@booklife</a>
+                        </div>
+                        <div>
+                            <img src="facebook.png">
+                            <a href="">BookLife</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

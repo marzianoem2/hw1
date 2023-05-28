@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    height: 10vh;
+    background-color: #596770;
+    color: white;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav span {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.left-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2%;
+    transform: rotate(135deg);
+    margin: 2%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30vw;
+}
+
+nav div a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#search-bar {
+    margin: 4% auto;
+    height: auto;
+    width: 80vw;
+}
+
+#form-search {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+}
+
+#form-search input[type=search] {
+    width: 100%;
+    outline: none;
+    padding: 2.5%;
+    border: none;
+    background-color: #e0ecf4;
+    font-size: 0.7em;
+}
+
+#form-search input[type=search]:focus {
+    border: 1px solid rgb(175, 188, 194);
+}
+
+#form-search button {
+    border: none;
+    background-color: #e0ecf4;
+    font-size: 1em;
+    padding: 2%;
+    color: #596770;
+    cursor: pointer;
+}
+
+.err {
+    font-size: 0.8em;
+    color: tomato;
+}
+
+.saved {
+    color: green;
+    margin: 2%;
+}
+
+.already-there {
+    color: tomato;
+    margin: 2%;
+}
+
+.results {
+    width: 80vw;
+    margin: 10% auto;
+}
+
+.list {
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.list li {
+    padding: 2%;
+}
+
+.button-add {
+    color: #596770;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 1.5%;
+    margin-left: 4%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.button-add:hover {
+    background-color: #596770;
+    color: white;
+    cursor: pointer;
+}
+
+.button-add.hidden {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .button-add.material-icons {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav div {
+        width: 70vw;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+
+    .left-arrow {
+        border-width: 0 1px 1px 0;
+    }
+
+    nav span {
+        text-align: center;
+    }
+}

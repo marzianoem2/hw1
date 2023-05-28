@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    height: 10vh;
+    background-color: #4e3432;
+    color: white;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.left-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2%;
+    transform: rotate(135deg);
+    margin: 2%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30vw;
+}
+
+nav div a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    text-decoration: underline;
+}
+
+nav span {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.first-c {
+    background-color: rgb(243, 240, 240);
+    height: 80vh;
+    margin: 4% auto;
+    padding: 1%;
+    font-size: 0.8em;
+    width: 15%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.second-c {
+    height: 80vh;
+    width: 80%;
+    margin: 4% auto;
+}
+
+#form-edit {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titolo {
+    width: 100%;
+    padding: 2%;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#titolo:focus {
+    outline: none;
+}
+
+#contenuto {
+    width: 100%;
+    height: 70%;
+    padding: 2%;
+    margin: 2% 0;
+    box-sizing: border-box;
+    border: none;
+    font-size: 0.8em;
+    resize: none;
+    font-family: inherit;
+}
+
+#contenuto:focus {
+    outline: none;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+#form-edit input[type=submit] {
+    width: 20%;
+    margin-bottom: 2%;
+    height: auto;
+    padding: 1%;
+    border: none;
+    font-size: 0.7em;
+    background-color: #b56660;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#form-edit input[type=submit]:hover {
+    background-color: white;
+    color: #b56660;
+}
+
+.error {
+    font-size: 0.7em;
+    color: tomato;
+}
+
+@media (max-width: 850px) {
+    section {
+        flex-direction: column;
+    }
+
+    .first-c {
+        width: 80%;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav div {
+        width: 70vw;
+        justify-content: center;
+        margin-bottom: 1%;
+    }
+
+    .left-arrow {
+        border-width: 0 1px 1px 0;
+    }
+
+    nav span {
+        text-align: center;
+    }
+}

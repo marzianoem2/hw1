@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #53606f;
+    font-size: 0.7em;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+nav a {
+    padding: 1%;
+    margin-right: 0.4%;
+    color: #53606f;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#section-log-in {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+/* div contenente il form */
+#section-log-in .col-2 {
+    width: 50%;
+    text-align: center;
+}
+
+/* div contenente l'immagine */
+#section-log-in .col-1 {
+    width: 40%;
+}
+
+#section-log-in .col-1 img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.log-sign {
+    width: 90%;
+    height: 100%;
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+}
+
+.log-sign label {
+    margin: 3% 0;
+    font-size: 0.8em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.log-sign input {
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    padding: 2%;
+    border-radius: 3px;
+}
+
+/* classe dello span contenente l'icona dell'occhio */
+.toggle-eye {
+    color: lightgray;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+}
+
+.pwd-lab {
+    position: relative;
+}
+
+.log-sign input[type=text], .log-sign input[type=password] {
+    border: 1px solid lightgrey;
+    outline: none;
+    box-shadow: 0 .3rem 0.8rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 2%;
+}
+
+.log-sign input[type=text]:focus, .log-sign .pwd-input input[type=password]:focus {
+    background-color: white;
+}
+
+.log-sign input[type=submit] {
+    margin: 8% auto;
+    background-color: rgba(70, 58, 29, 0.9);
+    color: white;
+    padding: 2%;
+    border: none;
+    box-shadow: 0 .3rem 0.8rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.log-sign input[type=submit]:hover {
+    color: rgba(70, 58, 29, 0.9);
+    background-color: white;
+}
+
+.log {
+    color: #53606f;
+    font-size: 0.7em;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding-top: 3%;
+}
+
+.log a {
+    color: #53606f;
+    text-decoration: none;
+}
+
+.log a:hover {
+    color: #53606f;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.errors {
+    font-size: 0.8em;
+    color: tomato;
+    border: none;
+}
+
+#section-log-in div #errors-php {
+    font-size: 0.7em;;
+    color: tomato;
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #section-log-in .col-1 img {
+        width: 70%;
+    }
+
+    #section-log-in .col-2 {
+        width: 60%
+    }
+
+    .log-sign label .material-icons {
+        font-size: 15px;
+    }
+
+    .errors {
+        font-size: 0.6em;
+    }
+
+    #section-log-in div #errors-php {
+        font-size: 0.5em;
+    }
+}
